@@ -239,9 +239,6 @@
             <div class="form-group mt-3">
               <input type="number" class="form-control" name="nilai2" id="nilai2" placeholder="Nilai Bahasa Inggris" required oninput="checkValue2()">
             </div>
-            <div class="form-group mt-3">
-              <input type="number" class="form-control" name="nilai3" id="nilai3" placeholder="Nilai Kejurusan" required oninput="checkValue3()">
-            </div>
             <input type="hidden" name="check" id="check" value="betul"><br>
             <center><button id="btnModal" style="color:var(--color-white); background:var(--color-primary); font-family:var(--font-secondary); padding:8px 23px; border-radius:4px; border:none; max-width:100%">Prediksi Hasil Jurusan</button></center>
 
@@ -254,7 +251,7 @@
 
   </main><!-- End #main -->
 
-  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <!-- <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
@@ -268,7 +265,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
 </body>
 
 <script type="text/javascript">
