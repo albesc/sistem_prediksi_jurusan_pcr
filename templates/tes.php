@@ -323,26 +323,6 @@
       document.getElementById("nilai2").value = "";
     }
   }
-
-  function checkValue3() {
-
-    var check = parseInt(document.getElementById('nilai3').value);
-
-    if ((check < 0) || (check > 100)) {
-      alert("Nilai Kejurusan harus diantara 0 - 100");
-      document.getElementById("nilai3").value = "";
-    }
-  }
-
-  function checkValue4() {
-
-    var check = parseInt(document.getElementById('nilai3').value);
-
-    if ((check < 0) || (check > 100)) {
-      alert("Nilai Kejurusan harus diantara 0 - 100");
-      document.getElementById("nilai3").value = "";
-    }
-  }
 </script>
 <!-- <script type="text/javascript">
   function checkValue1() {

@@ -10,7 +10,7 @@ warnings.filterwarnings("ignore")
 app = Flask(__name__)
 
 if __name__ == '__main__':
-    app.run(host="0.0.0.0", port=5000)
+    app.run()
 
 @app.route("/", methods=["GET", "POST"])
 def home():
@@ -50,7 +50,7 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.1, random_
 
 # Modelling
 
-knn = KNeighborsClassifier(3)
+knn = KNeighborsClassifier(n_neighbors=3, p=2)
 knn.fit(X_train, y_train)
 
 
@@ -84,8 +84,14 @@ def hasil():
 def predict_model(a, b, c):
     jurusanlama = a
     jurusanlama2 = 0
-    nilai1 = int(b) / 100
-    nilai2 = int(c) / 100
+    if (int(b) < 50):
+        nilai1 = 0
+    else:
+        nilai1 = abs(int(b) - 50) / 50
+    if (int(c) < 69):
+        nilai2 = 0
+    else:
+        nilai2 = abs(int(c) - 69) / 29
     nilai3 = 0
     nilai4 = 0
     nilai5 = 0
